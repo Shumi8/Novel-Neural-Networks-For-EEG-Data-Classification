@@ -56,14 +56,19 @@ This repository contains the implementation of three innovative neural network a
   - Confusion matrices to illustrate prediction quality.
 
 ## Usage
+
 1. **Run Models**:
-   - Execute individual scripts for each model architecture.
-   - Provide the EEG dataset path in the configuration.
+   - Execute individual scripts for each model architecture (First, Second, and Third Neural Network Approaches).
+   - Provide the EEG dataset path in the configuration files to ensure proper data loading.
+   - Models are configured to handle preprocessing, feature extraction, and training automatically.
 
 2. **Evaluate Results**:
-   - Analyze classification reports and visualizations.
+   - Analyze the following metrics to assess model performance:
+     - **First Neural Network Approach**: Achieved moderate accuracy (~76%) with balanced precision and recall.
+     - **Second Neural Network Approach**: Improved performance with higher accuracy (~80%) and better ROC-AUC scores.
+     - **Third Neural Network Approach**: Demonstrated the best results, achieving an accuracy of ~85%, with detailed visualizations such as confusion matrices, ROC-AUC curves, and accuracy/loss trends over epochs.
 
 ## Future Work
-- Enhance spatial feature extraction using advanced CNN techniques.
-- Introduce cross-dataset transfer learning to generalize models further.
-- Explore additional preprocessing methods for artifact removal and feature extraction.
+- Enhance spatial feature extraction using advanced CNN techniques to improve accuracy further.
+- Introduce cross-dataset transfer learning to generalize models across multiple EEG datasets.
+- Explore additional preprocessing methods (e.g., artifact removal and data augmentation) to increase reliability and robustness of the models.
